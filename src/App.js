@@ -40,7 +40,7 @@ function App() {
           <Link name="Zuri Team" id='btn__zuri' url="https://training.zuri.team/" />
           <Link name="Zuri Books" url="http://books.zuri.team/" id='books'/>
           <Link name="Python Books" id='book__python' url="http://books.zuri.team/python-for-beginners?ref_id=jesufemi" />
-          <Link name='Background check for coders' id='pitch' url='https://background.zuri.team'/>
+          <Link name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
           <Link name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
         </section>
         <section className="social">
