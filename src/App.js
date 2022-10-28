@@ -1,10 +1,11 @@
 import './App.css';
 
+import Link from './components/Link';
+
 import face from './assets/profile.jpg';
 import share from './assets/share-icon.svg';
 import ellipsis from './assets/horizontal-ellipsis.svg';
 import camera from './assets/camera.svg';
-import Link from './components/Link';
 import slack from './assets/slack.svg'
 import github from './assets/github.svg'
 import zuri from './assets/zuri.svg'
