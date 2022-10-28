@@ -1,15 +1,22 @@
 .App {
-  width: 90%;
+  padding: 45px 0;
+  width: 85%;
   margin: 0 auto;
 }
 
 .profile {
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
   /* justify-content: space-between; */
   /* justify-content: space-between; */
 
 
+}
+
+#twitter {
+  width: 100%;
+  text-align: center;
 }
 
 .img-container {
@@ -19,6 +26,7 @@
   margin-bottom: 24px;
   overflow: hidden;
   margin-left: auto;
+  margin-right: auto;
   flex: 0.5;
 
   position: relative;
@@ -96,6 +104,56 @@
   width: 15px;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link {
+  display: grid;
+  width: 100%;
+  height: 68px;
+  background: #EAECF0;
+  margin: auto;
+  place-items: center;
+  text-decoration: none;
+  color: #101828;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background: #D0D5DD;
+}
+
+.link:focus {
+  background: #EAECF0;
+  border: 1px solid #98A2B3;
+}
+
+.link:disabled {
+  background: #FCFCFD;
+  border: 1px solid #F2F4F7;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 48px;
+}
+
+footer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 @media (min-width:768px) {
   #mobile {
     display: none;
@@ -105,7 +163,17 @@
     display: block;
   }
 
+  .profile {
+    margin-bottom: 56px;
+  }
+
   .circle {
     right: 20%;
+  }
+
+  footer {
+    
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
