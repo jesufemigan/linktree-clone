@@ -13,7 +13,6 @@ import i4G from './assets/I4G.svg'
 function App() {
   return (
     <>
-
       <div className="App">
         <section className="profile">
           <div>
@@ -29,7 +28,8 @@ function App() {
             <p id='slack' style={{ display: 'none' }}>Jesufemi</p>
           </div>
           <div className="circle">
-            <img src={share} alt="share-button" id='desktop'/>
+            <img src={share} alt="share-button" className='desktop'/>
+            <p className='share__text desktop'>Share Link</p>
             <img src={ellipsis} alt="ellipsis" id='mobile'/>
           </div>
         </section>
