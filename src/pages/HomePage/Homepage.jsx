@@ -1,4 +1,4 @@
-import Link from "../../components/Link";
+import AnchorTags from "../../components/AnchorTags";
 
 import face from '../../assets/profile.jpg';
 import share from '../../assets/share-icon.svg';
@@ -7,6 +7,7 @@ import camera from '../../assets/camera.svg';
 import slack from '../../assets/slack.svg'
 import github from '../../assets/github.svg'
 import Footer from "../../components/Footer";
+
 
 const Homepage = () => {
   return (
@@ -34,13 +35,13 @@ const Homepage = () => {
           </section>
 
           <section className='links'>
-            <Link name="Twitter Link" url="https://twitter.com/jesufemigan" />
-            <Link name="Zuri Team" id='btn__zuri' url="https://training.zuri.team/" />
-            <Link name="Zuri Books" url="http://books.zuri.team/" id='books'/>
-            <Link name="Python Books" id='book__python' url="http://books.zuri.team/python-for-beginners?ref_id=jesufemi" />
-            <Link name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
-            <Link name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
-            <Link name='Contact Me' id='contact'/>
+            <AnchorTags name="Twitter Link" url="https://twitter.com/jesufemigan" />
+            <AnchorTags name="Zuri Team" id='btn__zuri' url="https://training.zuri.team/" />
+            <AnchorTags name="Zuri Books" url="http://books.zuri.team/" id='books'/>
+            <AnchorTags name="Python Books" id='book__python' url="http://books.zuri.team/python-for-beginners?ref_id=jesufemi" />
+            <AnchorTags name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
+            <AnchorTags name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
+            <AnchorTags name='Contact Me' id='contact'/>
           </section>
           <section className="social">
             <img src={slack} alt="slack" />

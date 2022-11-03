@@ -1,6 +1,6 @@
-const Link = ({ name, id, url }) => {
+const AnchorTags = ({ name, id, url }) => {
   return (
     <a href={url} id={id} className='link'>{name}</a>
   )
 }
-export default Link
+export default AnchorTags;
