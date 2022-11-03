@@ -42,6 +42,7 @@ function App() {
           <Link name="Python Books" id='book__python' url="http://books.zuri.team/python-for-beginners?ref_id=jesufemi" />
           <Link name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
           <Link name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
+          <Link name='Contact Me' id='contact'/>
         </section>
         <section className="social">
           <img src={slack} alt="slack" />
