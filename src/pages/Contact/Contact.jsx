@@ -1,4 +1,5 @@
 import Footer from '../../components/Footer';
+import GoToTop from '../../components/GoToTop';
 import './contact.css';
 
 import { useRef, useState } from 'react';
@@ -62,6 +63,7 @@ const Contact = () => {
         </form>
       </div>
       <Footer />
+      <GoToTop />
     </>
   )
 }
