@@ -8,6 +8,8 @@ import slack from '../../assets/slack.svg'
 import github from '../../assets/github.svg'
 import Footer from "../../components/Footer";
 
+import { Link } from "react-router-dom";
+
 
 const Homepage = () => {
   return (
@@ -41,7 +43,9 @@ const Homepage = () => {
             <AnchorTags name="Python Books" id='book__python' url="http://books.zuri.team/python-for-beginners?ref_id=jesufemi" />
             <AnchorTags name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
             <AnchorTags name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
-            <AnchorTags name='Contact Me' id='contact'/>
+            <Link to='/contact'>
+              <AnchorTags name='Contact Me' id='contact'/>
+            </Link>
           </section>
           <section className="social">
             <img src={slack} alt="slack" />
