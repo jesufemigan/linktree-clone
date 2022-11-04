@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
-
       <div className="App">
           <section className="profile">
             <div>
@@ -44,7 +43,7 @@ const Homepage = () => {
             <AnchorTags name='Background Check for Coders' id='pitch' url='https://background.zuri.team'/>
             <AnchorTags name='Design Books' id='book__design' url='https://books.zuri.team/design-rules'/>
             <Link to='/contact'>
-              <AnchorTags name='Contact Me' id='contact'/>
+              <AnchorTags name='Contact Me' id='contact' url='/contact'/>
             </Link>
           </section>
           <section className="social">
