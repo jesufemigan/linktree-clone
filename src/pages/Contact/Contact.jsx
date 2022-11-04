@@ -6,9 +6,10 @@ import { useRef, useState } from 'react';
 
 const Contact = () => {
   const name = 'Jesufemi'
-
   const messageRef = useRef(null)
+ 
   const [messageToSend, setMessageToSend] = useState('')
+  const [checkBoxValue, setCheckBoxValue] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -17,7 +18,6 @@ const Contact = () => {
       messageRef.current.classList.add('error')
     }
     messageRef.current.nextSibling.style.display = 'block'
-
   }
 
   if (messageToSend !== '') {
@@ -53,13 +53,13 @@ const Contact = () => {
           </div>
           <div className='checkbox-container'>
           <label className="checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" value={checkBoxValue} onChange={() => setCheckBoxValue(prev => !prev)}/>
             <span className="checkmark"></span>
           </label>
             <p>You agree to providing your data to {name} who may contact you.</p>
           </div>
 
-          <button type='submit' id='btn__submit'>Send Message</button>
+          <button type='submit' id='btn__submit' disabled={!checkBoxValue}>Send Message</button>
         </form>
       </div>
       <Footer />
